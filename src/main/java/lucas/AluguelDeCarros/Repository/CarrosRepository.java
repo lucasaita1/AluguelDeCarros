@@ -1,4 +1,8 @@
 package lucas.AluguelDeCarros.Repository;
 
-public interface CarrosRepository {
+import lucas.AluguelDeCarros.Model.CarrosModel;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface CarrosRepository  extends JpaRepository<CarrosModel, Long> {
+
 }
