@@ -41,7 +41,6 @@ private String placa;
 
 @Column(name = "Ano")
 @NotNull(message = "Ano é obrigatório")
-@Min(value = 2010, message = "Carro muito velho para aluguel")
 private int ano;
 
 @OneToOne
