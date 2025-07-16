@@ -36,7 +36,7 @@ public class MotoristaController {
         return ResponseEntity.ok(motoristaService.listarMotoristas());
     }
 
-    @GetMapping("/{id}")
+    @GetMapping("/listar/{id}")
     public ResponseEntity<MotoristaDto> buscarPorId(@PathVariable Long id) {
         Optional<MotoristaDto> carroId = motoristaService.listarMotoristaPorID(id);
 
@@ -46,13 +46,13 @@ public class MotoristaController {
     }
 
     //#UPDATE
-    @PutMapping("/{id}")
+    @PutMapping("editar/{id}")
     public ResponseEntity<MotoristaDto> atualizar(@PathVariable Long id, @RequestBody @Valid MotoristaDto motoristaDto) {
         return ResponseEntity.ok(motoristaService.editarMotorista(id, motoristaDto));
     }
 
     //#DELETE
-    @DeleteMapping("/{id}")
+    @DeleteMapping("deletar/{id}")
     public ResponseEntity<Void> deletarMotorista(@PathVariable Long id) {
         motoristaService.deletarMotorista(id);
         return ResponseEntity.noContent().build();
