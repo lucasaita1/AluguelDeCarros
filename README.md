@@ -73,11 +73,11 @@ POSTGRES_PASSWORD=sua_senha
 
 ### 🔸 Motoristas
 
-- `POST /motorista/criar`
-- `GET /motorista/listar`
-- `GET /motorista/listar/{id}`
-- `PUT /motorista/editar/{id}`
-- `DELETE /motorista/deletar/{id}`
+- `POST /motoristas/criar`
+- `GET /motoristas/listar`
+- `GET /motoristas/listar/{id}`
+- `PUT /motoristas/editar/{id}`
+- `DELETE /motoristas/deletar/{id}`
 
 ---
 
